@@ -27,4 +27,15 @@ describe "fizzbuzz" do
     end
   end
 
+  it 'tests for "fizz" up to 100' do
+    Array(0..100).select { |i| i % 3 == 0 && i % 15 != 0 }.each do |n|
+      expect(fizzbuzz(n)).to eq "fizz"
+    end
+  end
+
+  it 'tests for "buzz" up to 100' do
+    Array(0..100).select { |i| i % 5 == 0 && i % 15 != 0 }.each do |n|
+      expect(fizzbuzz(n)).to eq "buzz"
+    end
+  end
 end
