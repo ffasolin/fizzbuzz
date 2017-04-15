@@ -1,7 +1,7 @@
 # Fizzbuzz
 ## Applying TDD using RSpec to solve a fizz buzz challenge.
 
-#### How to run file:
+#### How to run:
 ```   
 rspec
 ```   
